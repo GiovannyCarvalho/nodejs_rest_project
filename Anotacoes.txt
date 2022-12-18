@@ -1,0 +1,26 @@
+Vídeo Aula
+https://www.youtube.com/watch?v=K5QaTfE5ylk
+Parei em: 1:04:00
+
+User: userAPI
+Pass: puY54VlYcTm0ixwJ
+
+String de conexão com o MongoDB
+mongodb+srv://userAPI:<password>@apicluster.zxqkai9.mongodb.net/?retryWrites=true&w=majority
+
+
+
+Conta Amazon
+Par de chaves da máquina Ubunti
+ChaveUbuntu
+
+
+Vídeos
+VM Ubuntu - AWS
+https://www.youtube.com/watch?v=kFBJCsJDxBQ
+
+Subir uma aplicação NODE.JS para um servidor DE GRAÇA! | AWS EC2
+https://www.youtube.com/watch?v=u-o7cqzK6u8
+
+
+
