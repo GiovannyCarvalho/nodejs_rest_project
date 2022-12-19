@@ -23,6 +23,7 @@ Subir uma aplicação NODE.JS para um servidor DE GRAÇA! | AWS EC2
 https://www.youtube.com/watch?v=u-o7cqzK6u8
 
 
-########
-Instalar o Swagger
-npm add swagger-ui-express
+
+nodejs_rest_project 
+
+15.228.12.182
