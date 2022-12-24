@@ -42,7 +42,7 @@ mongoose.
     connect(
         `mongodb+srv://${DB_USER}:${DB_PASSWORD}@apicluster.zxqkai9.mongodb.net/bancoAPI?retryWrites=true&w=majority`)
     .then(() =>{
-        console.log('Conectamos ao Mongo')
+        console.log('Conectamos ao Mongo: ' + port)
         app.listen(port)
     })
     .catch((err) => console.log(err))
