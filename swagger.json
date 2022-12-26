@@ -104,6 +104,76 @@
                     }
                 }
             }
-        }
+        },
+        "/person/{id}":{
+            "get": {
+                "description": "Busca pelo id da Pessoa",
+                "summary": "Busca pelo id da Pessoa",
+                "tags": ["People"],
+                "parameters": [
+                 {
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID da pessoa",
+                    "required": true
+                 }
+                ],
+                "security": [{"bearerAuth": []}],
+                "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "200":{
+                        "description": "Buscar pessoa pelo ID",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "type": "array",
+                                    "properties":{
+                                        "name":{
+                                            "type": "string"
+                                        },
+                                        "salary": {
+                                            "type": "number"
+                                        },
+                                        "approved": {
+                                            "type": "boolean"
+                                        }
+                                    },
+                                    "example":
+                                     {
+                                        "name": "Jow Merolha",
+                                        "salary": 15000,
+                                        "approved": false
+                                     }    
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Excluir pelo id da Pessoa",
+                "summary": "Excluir pelo id da Pessoa",
+                "tags": ["People"],
+                "parameters": [
+                 {
+                    "name": "id",
+                    "in": "path",
+                    "description": "ID da pessoa",
+                    "required": true
+                 }
+                ],
+                "security": [{"bearerAuth": []}],
+                "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "200":{
+                        "description": "Excluida pessoa pelo ID"
+                    }
+                }
+            }
+        }        
     }
 }
