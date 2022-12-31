@@ -1,6 +1,6 @@
 {
-  "name": "nodejs_rest_project",
-  "version": "1.0.0",
+  "name": "Basic REST-API using NodeJS and MongoDB",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
