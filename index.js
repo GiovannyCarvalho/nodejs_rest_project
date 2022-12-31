@@ -29,7 +29,7 @@ app.use('/person', personRoutes)
 app.get('/', (req, res) => {
 
     res.json({
-        message: 'Basic CRUD REST-API. See the documentation at http://172.31.35.254:3000/api-docs/'
+        message: 'Basic CRUD REST-API. See the documentation at http://18.230.168.174:3000/api-docs/'
     })
 })
 
