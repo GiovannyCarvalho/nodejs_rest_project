@@ -173,6 +173,50 @@
                         "description": "Excluida pessoa pelo ID"
                     }
                 }
+            },"patch": {
+                "description": "Alterar pelo id da Pessoa",
+                "summary": "Alterar pelo id da Pessoa",
+                "tags": ["People"],
+                "parameters": [
+                    {
+                       "name": "id",
+                       "in": "path",
+                       "description": "ID da pessoa",
+                       "required": true
+                    }
+                ],
+                "security": [{"bearerAuth": []}],
+                "requestBody":{
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type": "object",
+                                "properties":{
+                                    "name":{
+                                        "type": "string"
+                                    },
+                                    "salary": {
+                                        "type": "number"
+                                    },
+                                    "approved": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "422": {
+                        "description": "Pessoa não encontrada"
+                    },
+                    "200":{
+                        "description": "Person created"
+                    }
+                }
             }
         }        
     }
